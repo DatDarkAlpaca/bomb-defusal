@@ -3,7 +3,8 @@ from game import Game
 
 def main():
     game = Game({
-        'password_length': 4
+        'password_length': 4,
+        'max_attempts': 4 * 4
     })
 
     game.run()

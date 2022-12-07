@@ -19,13 +19,8 @@ def position_text(number: int) -> str:
             return f"{number}th"
 
 
-def display_bomb_information(bomb: Bomb):
-    print('-= Small Bomb =-')
-    print(f"Password Size: {len(bomb.password)}x units.", end='\n\n')
-
-
-def display_remaining_attempts(remaining: int):
-    pass
+def display_remaining_attempts(remaining: int, current_attempt: int):
+    print(f"You have {remaining - current_attempt + 1}x attempts left. That's your {position_text(current_attempt)} attempt.")
 
 
 def display_bomb(bomb: Bomb, guess_position: int) -> None:
