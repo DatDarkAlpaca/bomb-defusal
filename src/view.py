@@ -1,6 +1,6 @@
 import os
 
-from bomb import Bomb
+from src.bomb import Bomb
 
 
 # Utils:
