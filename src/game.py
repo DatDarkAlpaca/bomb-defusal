@@ -64,3 +64,6 @@ class Game:
 
         else:
             print(f"[ ! ] Your guess ({user_input}) is smaller than the {position_text(self.current_guess + 1)} entry!")
+
+        if self.bomb.check_if_entry_is_part_of_password(user_input) and user_input != self.bomb.password[self.current_guess - 1]:
+            print(f"[ ! ] The number {user_input} is part of the password!")
